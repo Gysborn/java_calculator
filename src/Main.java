@@ -30,7 +30,7 @@ public class Main {
         int opr2 = Utils.romanToInt(row[2]);
         int result = Utils.calculator(opr1, opr2, row[1]);
         if (result < 1) {
-            throw new NullPointerException("В римской системе нет отрицательных чисел");
+            throw new MyExceptions("В римской системе нет отрицательных чисел");
         }return Utils.romanize(result);
     }
 }
